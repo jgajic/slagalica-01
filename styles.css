@@ -1,0 +1,344 @@
+body {
+  background-color: cornsilk;
+}
+
+.veliki-div {
+  margin: 0 auto;
+  width: 585px;
+  display: flex;
+  flex-direction: column;
+  border: 3px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  background: linear-gradient(#3b17db, #8e7eab);
+  background: linear-gradient(#009ffd, #2a2a72);
+}
+
+.divs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  /* border-bottom: 2px solid;  nova slagalica */
+}
+
+.one {
+  display: inline-block;
+  margin: 10px 3px;
+  padding: 20px;
+  width: 10px;
+  height: 15px;
+  border: 3px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.five {
+  cursor: default;
+}
+
+.js-cell {
+  /* background-color: rgba(255, 255, 255, 0.305); */
+  background-color: rgba(193, 170, 170, 0.305);
+}
+
+.js-cell-hit {
+  background-color: rgba(54, 7, 7, 0.408);
+}
+
+span {
+  font-weight: bold;
+  font-size: 50px;
+  padding: 1px;
+}
+
+.js-ok-button {
+  background: white;
+  background: linear-gradient(#fff, rgb(47, 160, 205));
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-family: Inter, Helvetica, 'Apple Color Emoji', 'Segoe UI Emoji',
+    NotoColorEmoji, 'Noto Color Emoji', 'Segoe UI Symbol', 'Android Emoji',
+    EmojiSymbols, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  opacity: 1;
+  width: 35px;
+  height: 25px;
+  outline: 0 solid transparent;
+  padding: 2px 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 3px solid black;
+}
+
+.js-ok-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 1px;
+  left: 1px;
+}
+
+/* .js-ok-button {
+  margin: 0 5px;
+  position: relative;
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #0077cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  direction: ltr;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.47059;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+} */
+
+#resenje {
+  padding: 25px 0;
+}
+.konacnoResenje {
+  margin-left: 3.5px;
+  /* text-align: center;
+  justify-content: center;
+  align-content: center; */
+}
+
+.js-resenje-cell {
+  display: inline-block;
+  margin: 10px 2px;
+  padding: 20px;
+  width: 10px;
+  height: 15px;
+  /* background-image: url(img/strelica-png24-najbolja.png); */
+  /* background-color: linear-gradient(#380036, #0cbaba); */
+  /* background-color: rgba(193, 170, 170, 0.305); */
+  /* background-color: #ffb766;
+  background-color: rgb(138, 145, 140);
+  background-color: lightgray; */
+  background: linear-gradient(#380036, #0cbaba);
+  background: linear-gradient(#37d5d6, #36096d);
+  border: 3px solid black;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.znak-pitanja {
+  position: absolute;
+  top: -50px;
+  right: 15px;
+}
+
+.one-1,
+.two-2,
+.three-3,
+.four-4 {
+  margin-right: 1px;
+}
+
+.dugme-reset {
+  /* background: white; */
+  background: linear-gradient(#fff, rgb(47, 160, 205));
+  border-radius: 999px;
+  /* box-shadow: #fff 0 5px 10px -10px; */
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-family: Inter, Helvetica, 'Apple Color Emoji', 'Segoe UI Emoji',
+    NotoColorEmoji, 'Noto Color Emoji', 'Segoe UI Symbol', 'Android Emoji',
+    EmojiSymbols, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 3px solid black;
+  margin-right: 60px;
+}
+
+.dugme-reset:active,
+.js-ok-button:active {
+  transform: translateY(4px);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(125, 99, 159);
+  margin: 15% auto; /* 15% from the top and centered */
+  display: flex;
+
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px; /* Could be more or less, depending on screen size */
+  height: 60px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal.show-modal {
+  display: block;
+}
+
+.js-picker {
+  float: left;
+  margin-right: 10px;
+}
+
+.fa-question {
+  top: 2px;
+  position: absolute;
+  right: 11px;
+  color: white;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 680px) {
+  .veliki-div {
+    width: 100%;
+  }
+
+  .one {
+    padding: 10px;
+  }
+
+  .dugme-reset {
+    width: 140px;
+    margin: 0;
+  }
+
+  .js-resenje-cell {
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .znak-pitanja {
+    font-size: 30px;
+    top: -30px;
+    right: 9px;
+  }
+  .fa {
+    font-size: 35px !important;
+  }
+
+  .fa-question {
+    top: -1px;
+    right: 6px;
+  }
+}
+
+/* @media only screen and (max-width: 680px) {
+  .js-ok-button {
+    padding: 4px 8px;
+  }
+
+  .dugme-reset {
+    width: 140px;
+  }
+
+  
+} */
+
+@media only screen and (max-width: 400px) {
+  .veliki-div {
+    padding: 0 6px;
+  }
+
+  .dugme-reset {
+    width: 130px;
+  }
+
+  .konacnoResenje {
+    margin-left: 3px;
+  }
+
+  .js-resenje-cell {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .one-1 {
+    margin-right: 2px;
+  }
+
+  .two-2 {
+    margin-right: 2px;
+  }
+
+  .three-3 {
+    margin-right: 2px;
+  }
+
+  .fa {
+    font-size: 35px !important;
+  }
+
+  .fa-question {
+    top: -1px;
+    right: 6px;
+  }
+}
